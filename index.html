@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GUPIÉR — moda contemporânea, leveza que inspira.">
+    <title>GUPIÉR | Moda Contemporânea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="announcement">FRETE GRÁTIS NAS COMPRAS ACIMA DE R$ 299 <span>✦</span></div>
+
+    <header class="header">
+        <a class="brand" href="#inicio" aria-label="GUPIÉR - início">
+      GUPIÉR<span class="brand-star">✦</span>
+      <small>MODA CONTEMPORÂNEA</small>
+    </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+
+        <nav class="nav" id="mainNav">
+            <a href="#inicio">Início</a>
+            <a href="#colecao">Coleção</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="searchButton" aria-label="Buscar">⌕</button>
+            <button class="icon-button" aria-label="Minha conta">♙</button>
+            <button class="cart-button" id="cartButton" aria-label="Abrir carrinho">Sacola <span id="cartCount">0</span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-copy">
+                <p class="eyebrow"><span></span> NOVA COLEÇÃO</p>
+                <h1>Leveza<br>que <em>inspira.</em></h1>
+                <p class="hero-description">Moda contemporânea para quem vive o agora. Peças versáteis, conforto e personalidade em cada detalhe.</p>
+                <a class="button button-coral" href="#colecao">Conheça a coleção <span>→</span></a>
+                <div class="hero-note"><span>01</span><i></i><span>04</span><small>ESSENCIAL • ATEMPORAL • SEU</small></div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo photo-main" role="img" aria-label="Modelo usando look contemporâneo">
+                    <div class="photo-overlay">
+                        <span>GUPIÉR</span>
+                        <small>VISTA O QUE TE FAZ BEM.</small>
+                    </div>
+                </div>
+                <div class="hero-photo photo-detail" role="img" aria-label="Detalhe de tecido e roupa">
+                    <span>FEITO PARA ACOMPANHAR VOCÊ</span>
+                </div>
+                <div class="hero-stamp">✦<small>LEVEZA<br>EM CADA<br>ESCOLHA</small></div>
+            </div>
+        </section>
+
+        <section class="values" id="sobre">
+            <div class="value"><span class="value-icon">⌁</span>
+                <div><strong>Estilo contemporâneo</strong><small>Essencial, atual e versátil.</small></div>
+            </div>
+            <div class="value"><span class="value-icon">◇</span>
+                <div><strong>Qualidade em cada detalhe</strong><small>Escolhas feitas para durar.</small></div>
+            </div>
+            <div class="value"><span class="value-icon">✳</span>
+                <div><strong>Leveza para todos</strong><small>Moda unissex, sem rótulos.</small></div>
+            </div>
+        </section>
+
+        <section class="collection section" id="colecao">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">SELEÇÃO GUPIÉR</p>
+                    <h2>Peças para <em>viver.</em></h2>
+                    <p>Uma curadoria de básicos contemporâneos para acompanhar seu ritmo.</p>
+                </div>
+                <a class="text-link" href="#produtos">VER COLEÇÃO COMPLETA ↗</a>
+            </div>
+
+            <div class="category-strip">
+                <button class="category active" data-filter="todos">Todos</button>
+                <button class="category" data-filter="camisetas">Camisetas</button>
+                <button class="category" data-filter="moletons">Moletons</button>
+                <button class="category" data-filter="acessorios">Acessórios</button>
+            </div>
+
+            <div class="products" id="produtos">
+                <article class="product-card" data-category="camisetas">
+                    <div class="product-image product-one"><span class="product-tag">MAIS VENDIDO</span><button class="quick-add" data-product="Camiseta Essencial" data-price="89.90">＋</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Camiseta Essencial</h3>
+                            <p>Azul-marinho • Unissex</p>
+                        </div><strong>R$ 89,90</strong></div>
+                </article>
+                <article class="product-card" data-category="moletons">
+                    <div class="product-image product-two"><button class="quick-add" data-product="Moletom Horizonte" data-price="189.90">＋</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Moletom Horizonte</h3>
+                            <p>Creme • Unissex</p>
+                        </div><strong>R$ 189,90</strong></div>
+                </article>
+                <article class="product-card" data-category="camisetas">
+                    <div class="product-image product-three"><span class="product-tag">NOVIDADE</span><button class="quick-add" data-product="Camiseta Brisa" data-price="99.90">＋</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Camiseta Brisa</h3>
+                            <p>Coral • Unissex</p>
+                        </div><strong>R$ 99,90</strong></div>
+                </article>
+                <article class="product-card" data-category="acessorios">
+                    <div class="product-image product-four"><button class="quick-add" data-product="Boné GUPIÉR" data-price="79.90">＋</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>Boné GUPIÉR</h3>
+                            <p>Azul-marinho</p>
+                        </div><strong>R$ 79,90</strong></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="editorial">
+            <div class="editorial-image" role="img" aria-label="Composição editorial de moda"></div>
+            <div class="editorial-copy">
+                <p class="eyebrow">NOSSO JEITO DE VESTIR</p>
+                <h2>Menos excesso.<br>Mais <em>essência.</em></h2>
+                <p>Acreditamos que se vestir bem deve ser simples. Por isso, criamos uma proposta que une conforto, versatilidade e expressão pessoal — para você se sentir bem em qualquer ocasião.</p>
+                <a class="button button-outline" href="#sobre">Conheça a GUPIÉR <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="newsletter section" id="contato">
+            <p class="eyebrow">FIQUE POR PERTO</p>
+            <h2>Novidades com <em>leveza.</em></h2>
+            <p>Receba novidades, lançamentos e inspirações da GUPIÉR.</p>
+            <form id="newsletterForm" class="newsletter-form">
+                <label class="sr-only" for="email">Seu e-mail</label>
+                <input type="email" id="email" placeholder="Seu melhor e-mail" required>
+                <button class="button button-coral" type="submit">Quero receber →</button>
+            </form>
+            <small id="newsletterMessage" aria-live="polite"></small>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div>
+            <a class="brand footer-brand" href="#inicio">GUPIÉR<span class="brand-star">✦</span><small>MODA CONTEMPORÂNEA</small></a>
+            <p>Leveza que inspira.</p>
+        </div>
+        <div class="footer-links"><a href="#colecao">Coleção</a><a href="#sobre">Nossa essência</a><a href="#contato">Contato</a></div>
+        <div class="footer-social"><span>ACOMPANHE A GENTE</span><a href="#" aria-label="Instagram">Instagram ↗</a></div>
+        <div class="copyright">© 2026 GUPIÉR. Todos os direitos reservados.</div>
+    </footer>
+
+    <div class="cart-panel" id="cartPanel" aria-hidden="true">
+        <div class="cart-header">
+            <h2>Sua sacola</h2><button id="closeCart" aria-label="Fechar sacola">×</button></div>
+        <div id="cartItems" class="cart-items">
+            <p class="empty-cart">Sua sacola está esperando por você.</p>
+        </div>
+        <div class="cart-footer">
+            <div><span>Subtotal</span><strong id="cartSubtotal">R$ 0,00</strong></div><button class="button button-coral" id="checkoutButton">Continuar</button><small>Esta é uma demonstração visual; o checkout ainda não está conectado.</small></div>
+    </div>
+    <div class="scrim" id="scrim"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
